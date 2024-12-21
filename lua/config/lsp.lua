@@ -76,10 +76,6 @@ lspconfig.lua_ls.setup({
 --  on_attach=on_attach,
 -- })
 
--- lspconfig.ruff.setup({
---  on_attach=on_attach,
--- })
-
 lspconfig.pyright.setup({
  on_attach=on_attach,
  settings = {
