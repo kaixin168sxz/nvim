@@ -35,4 +35,8 @@ require("lazy").setup({
 		"L3MON4D3/LuaSnip",
 		version = "v2.*",
 	},
-    "gbprod/nord.nvim"})
+    "gbprod/nord.nvim", 
+    "williamboman/mason.nvim",
+	"williamboman/mason-lspconfig.nvim",
+	"neovim/nvim-lspconfig"})
+

@@ -1,4 +1,4 @@
-require('config.lazy')
+require('config.plugins')
 require('config.colorscheme')
 
 -- Customization for Pmenu
@@ -45,3 +45,4 @@ vim.api.nvim_set_hl(0, "CmpItemKindTypeParameter", { fg = "#D8EEEB", bg = "#58B5
 
 require('config.options')
 require('config.keymap')
+require('config.lsp')
