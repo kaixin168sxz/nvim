@@ -4,6 +4,12 @@ local has_words_before = function()
     return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
 end
 
+
+sources = cmp.config.sources({
+	{ name = "nvim_lsp" }
+	{ name = "buffer" },
+	{ name = "path" }})
+
 local luasnip = require("luasnip")
 local cmp = require("cmp")
 local kind_icons = {
@@ -64,23 +70,6 @@ cmp.setup({
 
   -- Let's configure the item's appearance
   -- source: https://github.com/hrsh7th/nvim-cmp/wiki/Menu-Appearance
-  -- formatting = {
-  --   fields = { "kind", "abbr" },
-  --   format = function(entry, vim_item)
-  --     -- Kind icons
-  --     vim_item.kind = string.format('%s %s |', kind_icons[vim_item.kind], vim_item.kind) -- This concatenates the icons with the name of the item kind
-  --     -- Source
-  --     vim_item.menu = ({
-  --       buffer = "[Buffer]",
-  --       nvim_lsp = "[LSP]",
-  --       luasnip = "[LuaSnip]",
-  --       nvim_lua = "[Lua]",
-  --       latex_symbols = "[LaTeX]",
-  --     })[entry.source.name]
-  --     return vim_item
-  --   end
-  -- },
-
     window = {
         completion = {
           -- winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None",
