@@ -50,9 +50,8 @@ map('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
 map('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
 map('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 
------------------
--- neotree key --
------------------
+------------------
+-- nvimtree key --
+------------------
 
--- map('n', '<leader>nn', ':Neotree<CR>', opts)
--- map('n', '<leader>nf', ':Neotree position=current<CR>', opts)
+map("n", "<leader>n", ":NvimTreeToggle<CR>", opts)
