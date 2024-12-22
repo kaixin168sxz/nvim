@@ -54,5 +54,5 @@ map('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 -- neotree key --
 -----------------
 
-map('n', '<leader>nn', ':Neotree<CR>', opts)
-map('n', '<leader>nf', ':Neotree position=current<CR>', opts)
+-- map('n', '<leader>nn', ':Neotree<CR>', opts)
+-- map('n', '<leader>nf', ':Neotree position=current<CR>', opts)

@@ -54,4 +54,5 @@ vim.api.nvim_set_hl(0, "CmpItemKindTypeParameter", { fg = "#D8EEEB", bg = "#58B5
 
 require('config.options')
 require('config.keymap')
-require('plugins.lsp')
+require('config.lsp')
+require('config.nvim-cmp')
