@@ -54,4 +54,3 @@ map('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 -- nvimtree key --
 ------------------
 
-map("n", "<leader>n", ":NvimTreeToggle<CR>", opts)

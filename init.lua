@@ -1,15 +1,7 @@
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+require('autocmds')
 require('config.plugins')
 require('config.colorscheme')
-local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
-  vim.api.nvim_create_autocmd('TextYankPost', {
-    callback = function()
-      vim.highlight.on_yank()
-    end,
-  group = highlight_group,
-  pattern = '*',
-})
+
 -- Customization for Pmenu
 vim.api.nvim_set_hl(0, "Pmenu", { fg = "#d8dee9", bg = "#3b4252" })
 vim.api.nvim_set_hl(0, "PmenuSel", { bg = "#4c566a", fg = "#d8dee9" })
