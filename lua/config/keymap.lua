@@ -51,6 +51,14 @@ map('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
 map('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 
 ------------------
--- nvimtree key --
+-- other keymap --
 ------------------
 
+map("n", "<leader>bd", function()
+    Snacks.bufdelete()
+end, { desc = "Delete Buffer" })
+map("n", "<leader>wd", "<C-W>c", { desc = "Delete Window", remap = true })
+
+map("n", "<leader>tn", ":FloatermNew<CR>")
+map("n", "<leader>tr", ":FloatermNew! ra<CR>")
+map("n", "<leader>tb", ":FloatermNew bash<CR>")
