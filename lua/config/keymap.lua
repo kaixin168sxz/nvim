@@ -55,6 +55,10 @@ map('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 ---------------------
 
 map('n', '<leader>pr', ':MPRun<CR>', { desc = 'Run micropython on device'})
+map('n', '<leader>pR', ':MPRepl<CR>', { desc = 'Access REPL on device'})
+map('n', '<leader>ps', ':MPUpload<CR>', { desc = 'Upload a file to device'})
+map('n', '<leader>pe', ':MPEraseOne<CR>', { desc = 'Delete a file on device'})
+map('n', '<leader>pI', ':MPInit<CR>', { desc = 'Init micropython venv in this directory'})
 
 ----------------
 -- delete key --
