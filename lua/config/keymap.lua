@@ -50,14 +50,24 @@ map('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
 map('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
 map('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 
-------------------
--- other keymap --
-------------------
+---------------------
+-- micropython key --
+---------------------
+
+map('n', '<leader>pr', ':MPRun<CR>', { desc = 'Run micropython on device'})
+
+----------------
+-- delete key --
+----------------
 
 map("n", "<leader>bd", function()
     Snacks.bufdelete()
 end, { desc = "Delete Buffer" })
 map("n", "<leader>wd", "<C-W>c", { desc = "Delete Window", remap = true })
+
+------------------
+-- floaterm key --
+------------------
 
 map("n", "<leader>tn", ":FloatermNew<CR>")
 map("n", "<leader>tr", ":FloatermNew! ra<CR>")
